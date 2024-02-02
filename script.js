@@ -98,7 +98,6 @@ function displayFavoriteMeals(meals) {
     favoriteList.appendChild(listItem);
 
     deleteButton.addEventListener("click", () => {
-      // Här kan du hämta måltidens ID som du vill radera (t.ex., meal.id)
       let mealId = meal.id;
 
       fetch(`http://localhost:8080/meal/${mealId}`, {
